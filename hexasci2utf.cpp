@@ -4,22 +4,23 @@
 #include <stdio.h>
 
 int main(void){
-    std::string bytestr;
+    std::string line;
     unsigned int byte;
     std::stringstream ss;
 
+    getline(std::cin,line);
+
     while(!std::cin.eof()){
-        std::cin >> std::ws >> bytestr >> std::ws;
-        if (bytestr.empty()||std::cin.peek()=='\n')
-        {
-          printf("\n");
-        }
-        else
-        {
-          ss.clear();
-          ss << std::hex << bytestr;
+        ss.clear();
+        ss << std::hex << line;
+        while (!ss.eof()) {
           ss >> byte;
           printf("%c",byte);
+        }
+
+        getline(std::cin,line);
+        if (!std::cin.eof()){
+          printf("\n");
         }
     }
     return 0;
