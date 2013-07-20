@@ -13,10 +13,8 @@ int main(void){
             std::cout <<hexch[c/16]<<hexch[c%16]<<" ";
         }
 
-        c='\n';
-        std::cout <<hexch[c/16]<<hexch[c%16];
-
-        std::cout<<std::endl;
+        std::cout<<'\n';
     }
+    std::cout.flush();
     return 0;
 }
