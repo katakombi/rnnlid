@@ -10,16 +10,35 @@ time rnnlm-0.3e/rnnlm -rnnlm EP-30h-0.03lr.de.rnn -debug 2 -hidden 30 -alpha 0.0
 #
 # required EP-30h-0.03lr.de.rnn.output.txt output
 #
-
-#  1                                                                                                                    #  2 iter: 0
-#  3 valid log probability: -8571272.114288
-#  4 PPL net: 6.214515
-#  5
-#  6 iter: 1
-#  7 valid log probability: -8571459.566479
-#  8 PPL net: 6.214763
-#  9
-# 10 iter: 2
-# 11 valid log probability: -8358327.653938
-# 12 PPL net: 5.938761
-
+#
+#iter: 0
+#valid log probability: -8679335.544469
+#PPL net: 6.359313
+#
+#iter: 1
+#valid log probability: -8654185.818180
+#PPL net: 6.325316
+#
+#iter: 2
+#valid log probability: -8428398.334712
+#PPL net: 6.028122
+#
+#iter: 3
+#valid log probability: -8291167.141185
+#PPL net: 5.854355
+#
+#iter: 4
+#valid log probability: -8223376.835392
+#PPL net: 5.770375
+#
+#iter: 5
+#valid log probability: -8183035.379013
+#PPL net: 5.720971
+#
+#iter: 6
+#valid log probability: -8156559.275273
+#PPL net: 5.688778
+#
+#iter: 7
+#valid log probability: -8140642.715397
+#PPL net: 5.669512
